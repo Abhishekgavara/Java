@@ -1,0 +1,48 @@
+/*package whatever //do not write package name here */
+
+import java.io.*;
+
+interface Account{
+    
+    void name();
+    void atm(int n);
+}
+interface Accountinfo{
+    void branchname(String s);
+    void branchcode(double n);
+}
+
+
+
+class abhi implements Account,Accountinfo {
+    
+   public void name(){
+        System.out.println("abhi");
+        
+    }
+    public void branchname(String s){
+        System.out.println(s);
+    }
+    public void branchcode(double n){
+        System.out.println(n);
+    }
+    
+    
+       public void name(String s){
+        System.out.println(s);
+        
+    }
+
+   public void atm(int n){
+    System.out.println(n);
+}
+    
+	public static void main (String[] args) {
+      abhi b=new abhi();
+      b.name("mhesh");
+      b.atm(2814);
+      b.branchname("palakonda");
+      b.branchcode(7589094);
+      
+	}
+}
